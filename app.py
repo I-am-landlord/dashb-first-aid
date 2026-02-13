@@ -79,12 +79,11 @@ app.layout = dbc.Container([
                     {"key": "1", "src": "https://example.com/image1.jpg", "caption": "Image 1"},
                     {"key": "2", "src": "https://example.com/image2.jpg", "caption": "Image 2"},
                     {"key": "3", "src": "https://example.com/image3.jpg", "caption": "Image 3"}
-                ],
-                controls=True,
-                indicators=True,
-                interval=2000,
-                ride="carousel"
-            ),
+            items=[...],
+            controls=True,
+            indicators=True,
+            interval=2000   # це і так запускає автоплей кожні 2 секунди
+        )
             
             # Static images
             html.H3("Static Images"),
