@@ -158,5 +158,4 @@ def toggle_offcanvas(clickData, is_open):
         return True, content
     return is_open, []
 
-if __name__ == '__main__':
-    app.run_server(debug=True)
+server = app.server
