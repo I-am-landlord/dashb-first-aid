@@ -1,6 +1,6 @@
-dash>=2.0
+dash
 dash-bootstrap-components
 plotly
 pandas
 requests
-gunicorn>=20.0
+gunicorn
