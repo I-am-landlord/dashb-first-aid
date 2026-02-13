@@ -73,17 +73,30 @@ app.layout = dbc.Container([
             ),
             
             # Image Carousel (Slider with images)
-            html.H3("Image Gallery"),
-            dbc.Carousel(
-                items=[
-                    {"key": "1", "src": "https://example.com/image1.jpg", "caption": "Image 1"},
-                    {"key": "2", "src": "https://example.com/image2.jpg", "caption": "Image 2"},
-                    {"key": "3", "src": "https://example.com/image3.jpg", "caption": "Image 3"}
-            items=[...],
+       html.H3("Image Gallery"),
+        dbc.Carousel(
+            items=[
+                {
+                    "key": "1",
+                    "src": "https://example.com/image1.jpg",
+                    "caption": "Image 1"
+                },
+                {
+                    "key": "2",
+                    "src": "https://example.com/image2.jpg",
+                    "caption": "Image 2"
+                },
+                {
+                    "key": "3",
+                    "src": "https://example.com/image3.jpg",
+                    "caption": "Image 3"
+                }
+            ],
             controls=True,
             indicators=True,
-            interval=2000   # це і так запускає автоплей кожні 2 секунди
-        )
+            interval=2000,  # автоплей кожні 2 секунди
+            # НЕ додавайте ride="carousel" — його немає в версії 2.0+
+),
             
             # Static images
             html.H3("Static Images"),
